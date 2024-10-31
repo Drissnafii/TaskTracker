@@ -1,1 +1,0 @@
-var myDiv = document.getElementById("")
