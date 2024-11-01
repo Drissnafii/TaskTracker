@@ -49,10 +49,11 @@ height: 100vh;
 }
 
 /* Form Styles */
-#task-form {
+#task-form, #creat_form, #update_form {
 display: flex;
 flex-wrap: wrap;
 gap: 1rem;
+margin-top: 1rem;
 }
 
 #task-input, #date-input, #priority-input {
@@ -64,7 +65,7 @@ color: #e0e0e0;
 border-radius: 4px;
 }
 
-#task-form button {
+.myButton {
 padding: 0.5rem 1rem;
 background-color: #4CAF50;
 color: white;
@@ -80,4 +81,13 @@ transition: background-color 0.3s;
 /* Task List Styles */
 #task-list {
 padding: 0;
+}
+
+thead th {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.update_form, .creat_form{
+    display: none;
 }
