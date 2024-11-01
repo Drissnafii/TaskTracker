@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">     
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <div>
             <h1>TaskTracker</h1>
         </div>
         <div class="priority-header">
-            <button class="myButton">Click Me</button>
 
         <!-- Future: Add part to see my priority tasks -->
-
+         
         <!-- <h3>High</h3>
              <h3>Medium</h3>
              <h3>Low</h3>
@@ -26,59 +24,24 @@
     <main>
             <h1>Add Task </h1> 
             <br>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task" required>
+            <input type="date" id="date-input">
+            <select  id="priority-input">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit"><strong>+</strong></button>
+        </form>
 
-                <form id="task-form">
-                    <input type="text" id="task-input" placeholder="Enter your task" required>
-                    <input type="date" id="date-input">
-                    <select  id="priority-input">
-                        <option value="low">Low</option>
-                        <option value="medium">Medium</option>
-                        <option value="high">High</option>
-                    </select>
-                    <button type="submit" class="myButton"><strong>+</strong></button>
-                </form>
-
-        <!-- ------------------------------Todo Tasks------------------------------------ -->
+        <!-- division of tasks Todo -->
         <div class="Todo-part">
-            <br><br><h2>To do</h2>
-            <p>_____________</p>
-
-                <form class="creat_form">
-                    <input type="text" id="task-input" placeholder="Enter your task" required>
-                    <input type="date" id="date-input">
-                    <select  id="priority-input">
-                        <option value="low">Low</option>
-                        <option value="medium">Medium</option>
-                        <option value="high">High</option>
-                    </select>
-                    <button type="submit" class="myButton"><strong>+</strong></button>
-                </form>
-
-                <form class="update_form">
-                        <input type="text" id="task-input" placeholder="Enter your task" required>
-                        <input type="date" id="date-input">
-                        <select  id="priority-input">
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                        <button type="submit" class="myButton"><strong>+</strong></button>
-                 </form>
-
-                 <div class="add_div">
-                    <button class="myButton">Add+</button>
-                 </div>
-                
+            <br><h2>My tasks</h2>
             
-            <table>
-                <thead class="table_head">
-                    <th>Discription</th>
-                    <th>Date</th>
-                    <th>Statue</th>
-                </thead>
-                <tbody class="data_table"></tbody>
-            </table>
-
+            <ul id="taskList" class="task-list">
+                <!-- Tasks... -->
+            </ul>
         </div>
 
 
@@ -88,7 +51,6 @@
     <footer>
 
     </footer>
-
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html> 
