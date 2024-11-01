@@ -42,13 +42,13 @@ header {
     }
     
     /* Form Styles */
-    #task-form {
+    #task_form {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     }
     
-    #task-input, #date-input, #priority-input {
+    #task_input, #date_input, #priority_input {
     border: none;
     flex: 1;
     padding: 0.5rem;
@@ -57,7 +57,7 @@ header {
     border-radius: 4px;
     }
     
-    #task-form button {
+    #task_form button {
     padding: 0.5rem 1rem;
     background-color: #4CAF50;
     color: white;
@@ -65,7 +65,7 @@ header {
     border-radius: 59px;
     }
     
-    #task-form button:hover {
+    #task_form button:hover {
     background-color: #337a37;
     transition: background-color 0.3s;
     }
