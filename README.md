@@ -10,12 +10,6 @@ Check out the live application: [TaskTracker](https://drissnafii.github.io/TaskT
 
 View the complete UI design on Figma: [TaskTracker Design](https://www.figma.com/design/WwbfxfcKdNtvpVAKZvYjNu/TaskTracker?node-id=0-1&t=LRsL92ta81kbKJsA-1)
 
-## Canva Presentation
-
-Certainly! Here’s how it would look with the requested format:
-
----
-
 ## Canva Design
 
 View my Presentation on Canva: [Canva link](https://www.canva.com/design/DAGVP8CqANs/izoFvjzGDYF-o_1xLv7Rmg/edit?utm_content=DAGVP8CqANs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
