@@ -8,20 +8,20 @@ let counter=0;
 function addTask(){
     task={
         id:counter+1,
-        TName:document.getElementById("task_input").value,
-        TDate:document.getElementById("date_input").value,
-        Tpriority:document.getElementById("priority_input").value,
+        taskName:document.getElementById("task_input").value,
+        taskDate:document.getElementById("date_input").value,
+        taskpriority:document.getElementById("priority_input").value,
     }
     if(task.TName&&task.TDate&&task.Tpriority){
     tasks.push(task);
     showTasks();
     counter++;
-    document.getElementById("task-form").reset();
+    document.getElementById("task_form").reset();
 }
 }
 
 function showTasks(){
-    const TBody=document.getElementById("taskslist");
+    const TBody=document.getElementById("tasks_list");
     TBody.innerHTML="";
     for(let i=0;i<tasks.length;i++){
         const tr=document.createElement("tr");
