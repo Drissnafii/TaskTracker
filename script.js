@@ -5,19 +5,27 @@ let task={
 
 let counter=0;
 
-function addTask(){
-    task={
-        id:counter+1,
-        taskName:document.getElementById("task_input").value,
-        taskDate:document.getElementById("date_input").value,
-        taskpriority:document.getElementById("priority_input").value,
-    }
-    if(task.TName&&task.TDate&&task.Tpriority){
-    tasks.push(task);
-    showTasks();
+function addTask() {
+    // Get data from the input fields
+    const taskName = document.getElementById("task_input").value;
+    const taskDate = document.getElementById("date_input").value;
+    const taskPriority = document.getElementById("priority_input").value;
+
+    // new task object
+    const newTask = {
+        id: counter + 1,
+        TName: taskName,
+        TDate: taskDate,
+        Tpriority: taskPriority,
+    };
+
+    tasks.push(newTask);
+
     counter++;
+
+    showTasks();
+
     document.getElementById("task_form").reset();
-}
 }
 
 function showTasks(){
